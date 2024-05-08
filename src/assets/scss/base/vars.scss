@@ -4,9 +4,32 @@
   --neutral-color-20: #f5f5f5;
   --neutral-color-60: #18181d;
   --neutral-color-100: #1d1e25;
+  --neutral-color-120: #828282;
+  --neutral-color-130: #d9d9d9;
+
+  // primary color
+  --primary-color-50: #4e7ddb;
+
+  // logo
+  --logo-circle-color: #1d1e25;
+
+  // container
+  --container-width: 1200px;
+  --container-padding: 15px;
+
+  // transition
+  --transition: 0.2s;
+
+  // z-index
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-3: 3;
+  --z-index-4: 4;
+  --z-index-5: 5;
 }
 
 [data-theme='dark'] {
   --neutral-color-10: #1d1e25;
   --neutral-color-100: #fff;
+  --logo-circle-color: #343542;
 }

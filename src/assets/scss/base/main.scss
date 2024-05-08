@@ -17,6 +17,9 @@ html {
   overflow-x: hidden;
   color: var(--neutral-color-100);
   background-color: var(--neutral-color-10);
+  transition:
+    color var(--transition),
+    background-color var(--transition);
 
   &--fixed {
     overflow-y: hidden;
@@ -46,7 +49,8 @@ input {
   border: none;
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
 }
 
