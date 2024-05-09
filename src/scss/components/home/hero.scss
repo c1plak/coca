@@ -1,7 +1,12 @@
 .hero {
-  overflow-x: hidden;
+  overflow: hidden;
   padding-top: 87px;
   padding-bottom: 141px;
+
+  @include small-mobile {
+    padding-top: 44px;
+    padding-bottom: 71px;
+  }
 
   &__container {
     display: flex;
