@@ -1,0 +1,16 @@
+<svg width="12.000000" height="12.000000" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_4644">
+			<rect id="UI icon 16/up" width="12.000000" height="12.000000" transform="matrix(0.999971 0.0076744 0.0076744 -0.999971 -0.429688 11.761)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="UI icon 16/up" width="12.000000" height="12.000000" transform="matrix(0.999971 0.0076744 0.0076744 -0.999971 -0.429688 11.761)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_4644)">
+		<rect id="Frame 87" width="7.500000" height="9.000000" transform="matrix(0.999971 0.0076744 0.0076744 -0.999971 1.83105 10.2783)" fill="#FFFFFF" fill-opacity="0"/>
+		<path id="Vector 618" d="M1.85 6.52L5.58 10.3L9.35 6.58" stroke="#E35454" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linecap="round"/>
+		<path id="Vector 619" d="M14.58 10.37L5.58 10.3" stroke="#E35454" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linecap="round"/>
+	</g>
+</svg>
