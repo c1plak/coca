@@ -1,0 +1,76 @@
+.partners {
+  &__container {
+    @include flex-all-center;
+    gap: 30px;
+    border-top: 1px solid #ededed;
+    padding-top: 86px;
+    padding-bottom: 86px;
+
+    @include small-desktop {
+      max-width: 85.43vw;
+    }
+
+    @include small-mobile {
+      padding-top: 50px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__info {
+    max-width: 323px;
+
+    &-value {
+      display: inline-block;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+
+      @include small-tablet {
+        font-size: 46px;
+      }
+
+      @include mobile {
+        font-size: 36px;
+      }
+
+      @include small-mobile {
+        font-size: 30px;
+      }
+    }
+
+    &-description {
+      font-weight: 500;
+      line-height: 1.78;
+      color: var(--neutral-color-150);
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px 30px;
+    flex-wrap: wrap;
+    max-width: 730px;
+
+    @include mini-desktop {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    @include flex-all-center;
+    border-radius: 16px;
+    width: 160px;
+    height: 90px;
+    background-color: #fff;
+  }
+}

@@ -28,6 +28,7 @@
     "vite-plugin-minify": "^1.5.2"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^11.1.3"
   }
 }

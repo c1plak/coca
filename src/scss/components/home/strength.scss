@@ -1,6 +1,15 @@
 .strength {
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 160px;
+  &__container {
+    padding-bottom: 160px;
+
+    @include mobile {
+      padding-bottom: 80px;
+    }
+  }
+
+  // @include tablet {
+  //   padding-bottom: 80px;
+  // }
 
   &__list {
     @include flex-align-center;
@@ -71,7 +80,7 @@
 
   &__info {
     display: flex;
-    gap: 30px;
+    gap: 60px;
     align-items: flex-start;
 
     @include tablet {

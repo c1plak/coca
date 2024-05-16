@@ -1,0 +1,176 @@
+.testimonials {
+  &__heading {
+    @include flex-all-between;
+    gap: 30px;
+    margin-bottom: 112px;
+
+    @include small-tablet {
+      flex-direction: column;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    &-title {
+      max-width: 530px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+
+      @include tablet {
+        font-size: 70px;
+      }
+
+      @include small-tablet {
+        font-size: 46px;
+      }
+
+      @include mobile {
+        font-size: 36px;
+      }
+
+      @include small-mobile {
+        font-size: 30px;
+      }
+    }
+
+    &-description {
+      max-width: 376px;
+      font-weight: 500;
+      line-height: 1.78;
+      color: var(--neutral-color-150);
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__swiper {
+    max-width: 898px;
+
+    &-wrapper {
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 115px;
+        height: 77px;
+        background: url('./assets/images/testimonials/quote.svg');
+        transform: translateY(15px);
+
+        @include mini-desktop {
+          transform: translateY(-5px);
+        }
+      }
+    }
+
+    &-btns {
+      @include flex-align-center;
+      z-index: var(--z-index-2);
+      gap: 16px;
+      justify-content: flex-end;
+      transform: translateY(-50px);
+
+      @include mini-desktop {
+        transform: translateY(10px);
+      }
+    }
+
+    &-button {
+      &-prev {
+        transform: rotate(180deg);
+      }
+
+      &-prev,
+      &-next {
+        border: 1px solid var(--neutral-color-100);
+        border-radius: 50%;
+        padding: 16px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--neutral-color-100);
+        transition: var(--transition);
+        cursor: pointer;
+
+        & svg path {
+          fill: var(--button-arrow-color);
+        }
+
+        &:hover {
+          background-color: var(--button-hover-color);
+
+          & svg path {
+            fill: var(--button-arrow-hover-color);
+          }
+        }
+
+        &.swiper-button-disabled {
+          border-color: #ced1d8;
+          background-color: transparent;
+          cursor: auto;
+
+          & svg path {
+            fill: #ced1d8;
+          }
+        }
+      }
+    }
+  }
+
+  &__slide {
+    &-rating {
+      @include flex-align-center;
+      gap: 8px;
+      margin-bottom: 19px;
+    }
+
+    &-review {
+      margin-bottom: 40px;
+      font-weight: 500;
+      line-height: 1.3;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+
+      @include small-tablet {
+        font-size: 32px;
+      }
+
+      @include mobile {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+    }
+
+    &-author {
+      @include flex-align-center;
+      gap: 24px;
+      max-width: 298px;
+
+      &-photo {
+        overflow: hidden;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+      }
+
+      &-name {
+        font-weight: 600;
+        line-height: 1.44;
+        color: var(--neutral-color-100);
+
+        @include small-mobile {
+          font-size: 14px;
+        }
+      }
+
+      &-profession {
+        font-weight: 500;
+        line-height: 1.62;
+        color: var(--neutral-color-150);
+
+        @include small-mobile {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
