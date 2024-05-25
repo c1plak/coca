@@ -1,7 +1,7 @@
 .overview {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #1d1e25;
+  background-color: var(--background-color);
 
   @include small-mobile {
     padding-top: 50px;

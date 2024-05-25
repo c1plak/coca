@@ -27,22 +27,6 @@
       text-align: center;
     }
 
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      display: inline-block;
-      width: 551px;
-      height: 551px;
-      background: #fa7515;
-      opacity: 0.13;
-      filter: blur(220px);
-
-      @include mini-desktop {
-        left: -8%;
-      }
-    }
-
     &-title {
       margin-bottom: 114px;
       font-weight: 700;
@@ -132,16 +116,16 @@
   &__img {
     position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: -280px;
-      width: 525px;
-      height: 525px;
-      background: #e2f8f033;
-      filter: blur(180px);
-    }
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   right: -280px;
+    //   width: 525px;
+    //   height: 525px;
+    //   background: #e2f8f033;
+    //   filter: blur(180px);
+    // }
 
     @include small-desktop {
       margin-right: 70px;

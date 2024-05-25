@@ -1,4 +1,10 @@
 .testimonials {
+  padding: 69px 0 160px;
+
+  @include tablet {
+    padding-bottom: 80px;
+  }
+
   &__heading {
     @include flex-all-between;
     gap: 30px;
