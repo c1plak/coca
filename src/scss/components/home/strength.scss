@@ -1,15 +1,20 @@
 .strength {
   &__container {
     padding-bottom: 160px;
+    border-bottom: 1px solid #ededed;
+
+    @include small-desktop {
+      max-width: 85.43vw;
+    }
 
     @include mobile {
       padding-bottom: 80px;
     }
-  }
 
-  // @include tablet {
-  //   padding-bottom: 80px;
-  // }
+    @include small-mobile {
+      padding-top: 50px;
+    }
+  }
 
   &__list {
     @include flex-align-center;

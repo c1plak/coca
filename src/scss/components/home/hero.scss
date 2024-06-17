@@ -116,17 +116,6 @@
   &__img {
     position: relative;
 
-    // &::after {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   right: -280px;
-    //   width: 525px;
-    //   height: 525px;
-    //   background: #e2f8f033;
-    //   filter: blur(180px);
-    // }
-
     @include small-desktop {
       margin-right: 70px;
     }
