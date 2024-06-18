@@ -60,7 +60,7 @@
         display: inline-block;
         width: 115px;
         height: 77px;
-        background: url('./assets/images/testimonials/quote.svg');
+        background: url('/assets/images/testimonials/quote.svg');
         transform: translateY(15px);
 
         @include mini-desktop {

@@ -98,7 +98,7 @@
           &-value {
             &-percent {
               &::before {
-                background: url('./assets/images/features/arrow-up.svg');
+                background: url('/assets/images/features/arrow-up.svg');
               }
             }
           }
@@ -110,7 +110,7 @@
           &-value {
             &-percent {
               &::before {
-                background: url('./assets/images/features/arrow-down.svg');
+                background: url('/assets/images/features/arrow-down.svg');
               }
             }
           }
@@ -194,7 +194,7 @@
       flex-shrink: 0;
       width: 20px;
       height: 20px;
-      background: url('./assets/images/features/check.svg');
+      background: url('/assets/images/features/check.svg');
     }
 
     &:not(:last-child) {

@@ -209,7 +209,7 @@
           color: var(--success-color-70);
 
           &::before {
-            background: url('./assets/images/icons/green-trend.svg') no-repeat;
+            background: url('/assets/images/icons/green-trend.svg') no-repeat;
           }
         }
 
@@ -217,7 +217,7 @@
           color: var(--error-color-70);
 
           &::before {
-            background: url('./assets/images/icons/red-trend.svg');
+            background: url('/assets/images/icons/red-trend.svg');
           }
         }
       }

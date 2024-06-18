@@ -215,7 +215,7 @@
         display: inline-block;
         width: 24px;
         height: 24px;
-        background: url('./assets/images/icons/list-check.svg');
+        background: url('/assets/images/icons/list-check.svg');
       }
 
       &:not(:last-child) {
@@ -232,7 +232,7 @@
         color: var(--neutral-color-150);
 
         &::before {
-          background: url('./assets/images/icons/list-check-disabled.svg');
+          background: url('/assets/images/icons/list-check-disabled.svg');
         }
       }
     }

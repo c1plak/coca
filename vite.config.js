@@ -5,6 +5,8 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 export default defineConfig({
   root: 'src/',
+  base: '/coca/',
+  publicDir: './src/assets',
   build: {
     outDir: '../dist/',
     emptyOutDir: true,
@@ -12,7 +14,7 @@ export default defineConfig({
       input: {
         main: './src/index.html',
         pricing: './src/pricing.html',
-        contacts: './src/contact-us.html',
+        contacts: './src/contacts.html',
       },
     },
   },
