@@ -2,12 +2,30 @@
   padding-top: 88px;
   margin-bottom: 160px;
 
+  @include tablet {
+    padding-top: 44px;
+    margin-bottom: 80px;
+  }
+
+  @include small-tablet {
+    padding-top: 15px;
+  }
+
   &__container {
     position: relative;
     display: flex;
     justify-content: flex-end;
     padding-right: 0;
     max-width: 1440px;
+
+    @include mini-desktop {
+      padding-right: var(--container-padding);
+      max-width: none;
+    }
+
+    @include tablet {
+      justify-content: center;
+    }
   }
 
   &__form {
@@ -17,12 +35,30 @@
       line-height: 1.22;
       letter-spacing: -0.02em;
       color: #1d1e25;
+
+      @include small-tablet {
+        font-size: 26px;
+      }
+
+      @include mobile {
+        text-align: center;
+        font-size: 24px;
+      }
+
+      @include small-mobile {
+        font-size: 21px;
+      }
     }
 
     &-description {
       line-height: 1.67;
       color: var(--neutral-color-150);
       margin-bottom: 48px;
+      font-size: 15px;
+
+      @include mobile {
+        text-align: center;
+      }
     }
 
     &-wrapper {
@@ -32,6 +68,19 @@
       border: 1px solid #ced1d8;
       background: #fff;
       max-width: 608px;
+
+      @include mini-desktop {
+        left: 1%;
+      }
+
+      @include tablet {
+        position: static;
+      }
+
+      @include small-tablet {
+        max-width: 500px;
+        padding: 28px 24px;
+      }
     }
 
     &-top {
@@ -57,6 +106,7 @@
       border-radius: 8px;
       padding: 10px 14px;
       line-height: 1.71;
+      width: 100%;
       color: var(--neutral-color-150);
 
       &--textarea {
@@ -67,10 +117,22 @@
     }
 
     &-btn {
-        margin-top: 8px;  
-        color: #fff;
-        background: #1d1e25;
-        padding: 16px 32px;
+      margin-top: 8px;
+      color: #fff;
+      background: #1d1e25;
+      padding: 16px 32px;
+
+      @include small-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__img {
+    @include tablet {
+      display: none;
     }
   }
 }
