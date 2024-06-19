@@ -135,7 +135,6 @@
         margin-top: 24px;
         font-weight: 400;
         line-height: 1.5;
-        color: var(--neutral-color-150);
       }
 
       &-item {
@@ -146,6 +145,7 @@
 
       &-link {
         position: relative;
+        color: var(--neutral-color-150);
 
         &::before {
           content: '';
@@ -207,6 +207,7 @@
 
     &-link {
       position: relative;
+      color: var(--neutral-color-150);
 
       &::before {
         content: '';
